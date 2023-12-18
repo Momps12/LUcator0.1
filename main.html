@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.maptiler.com/maptiler-sdk-js/v1.1.1/maptiler-sdk.umd.js"></script>
+  <script src="https://cdn.maptiler.com/leaflet-maptilersdk/v1.0.0/leaflet-maptilersdk.js"></script>  
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.js"></script>
+  <script src="https://api.maptiler.com/maps/v1/mtk.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link href="https://cdn.maptiler.com/maptiler-sdk-js/v1.1.1/maptiler-sdk.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="icon" href="src/LU.Cator.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <title>LUcator</title>
+</head>
+<body>
+<div class="MainMap">
+  <!--*Header-->  
+  <div class="container">
+    <h1 id="ulo">
+      <img id="logo" src="src/LU.Cator(1).png">LU<span id="cator"> CATOR</span>
+    </h1>
+    <div class="search-container">
+      <div id="sg">
+        <div class="search-bar">
+          <button id="strbtn"><i class="fas fa-microphone"></i></button>
+          <input id="output" placeholder="Search..."></input>
+          <button id="srchbtn"><i class="fa fa-search"></i></button>
+          <script src="assets/javascript/autocomplete.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <script src="assets/javascript/voicesearch.js"></script>
+  
+  <!--TODO SIDEBAR-->
+  <div id="mySidebar" class="sidebar">
+    <a href="#">About</a>
+    <a href="#">Email</a>
+    <a href="#">Report Center</a>
+    <a href="https://forms.gle/d53Si2vUnNYHSF43A">Rate Us</a>
+    <a href="#">Credits</a>
+  
+  <footer>
+      <div id="socials" class="footerContainer"> 
+          <div class="socialIcons"> 
+              <a href="https://www.facebook.com/LagunaUniversityOfficial" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.youtube.com/@lagunauniversity9763" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.instagram.com/lucscofficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://lu.edu.ph/" target="_blank"><i class="fa brands fa-globe"></i></a>
+          </div>
+  </footer>
+  </div> 
+ 
+  <!--!MAP-->`
+  <div id="map"></div>
+  <script src="script.js"></script>
+  <script src="assets/javascript/search.js"></script>
+  
+  <div id="main">
+  <button class="hamburger" onclick="toggleNav()">&#9776;</button> 
+  </div>
+  <script src="assets/javascript/sidebar.js"></script>
+</div>
+</body>
+</html>
