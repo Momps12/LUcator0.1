@@ -7,6 +7,7 @@
 
 body {
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .banner {
@@ -61,7 +62,7 @@ body {
 li a:hover {
   background: white;
   transition: 0.6s;
-  color: black; /* Adjust text color on hover */
+  color: black;
 }
 
 .navbar a:hover {
@@ -92,6 +93,7 @@ li a:hover {
 }
 
 button {
+  max-width: 300px;
   width: 400px;
   padding: 15px;
   margin: 20px 5px;
@@ -125,7 +127,7 @@ button:hover {
   }
 
   .content h1 {
-    font-size: 7vw;
+    font-size: 8vw;
     margin-top: 150px;
   }
 
@@ -134,8 +136,10 @@ button:hover {
   }
 
   .logo{
-    height: 200px;
-    width: 200px;
+    position: relative;
+    height: 250px;
+    width: 250px;
+    top: 70px;
   }
 }
 
